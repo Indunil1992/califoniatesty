@@ -1,0 +1,149 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "4c35e35b-7116-43de-9049-c1f88cfdd329": {
+        "id": "4c35e35b-7116-43de-9049-c1f88cfdd329",
+        "parent": null,
+        "name": "califoniatesty",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "71ff3842-a477-4be9-89b3-89974cd285c5",
+          "9d6aba44-6753-4c9f-8275-8bd5811bd216"
+        ],
+        "isRemovable": false,
+        "filePath": "califoniatesty"
+      },
+      "71ff3842-a477-4be9-89b3-89974cd285c5": {
+        "id": "71ff3842-a477-4be9-89b3-89974cd285c5",
+        "parent": "4c35e35b-7116-43de-9049-c1f88cfdd329",
+        "name": "function.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "califoniatesty/function.js",
+        "config": {
+          "runtime": "nodejs8",
+          "timeout": 60,
+          "memory": 128,
+          "triggerType": 0,
+          "handler": "handler"
+        },
+        "triggers": [
+          {
+            "resourceName": "http-trigger",
+            "config": {}
+          }
+        ],
+        "testCases": {
+          "a92f4f53-a4c6-4b08-a75d-ac4839cf3141": {
+            "id": "a92f4f53-a4c6-4b08-a75d-ac4839cf3141",
+            "name": "Test event",
+            "functionId": "71ff3842-a477-4be9-89b3-89974cd285c5",
+            "event": "{\r\n    \"key1\": \"value1\",\r\n    \"key2\": \"value2\",\r\n    \"key3\": \"value3\"\r\n}",
+            "eventTemplate": "hello-world"
+          }
+        }
+      },
+      "e82a7abd-5699-400b-8f96-12152fbce036": {
+        "id": "e82a7abd-5699-400b-8f96-12152fbce036",
+        "parent": null,
+        "name": "index.js",
+        "type": "JS_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": false,
+        "filePath": "index.js"
+      },
+      "f95a2035-19cd-4905-bf87-4c8f4afbc475": {
+        "id": "f95a2035-19cd-4905-bf87-4c8f4afbc475",
+        "parent": null,
+        "name": "main.py",
+        "type": "PYTHON_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": false,
+        "filePath": "main.py"
+      },
+      "9d6aba44-6753-4c9f-8275-8bd5811bd216": {
+        "id": "9d6aba44-6753-4c9f-8275-8bd5811bd216",
+        "parent": "4c35e35b-7116-43de-9049-c1f88cfdd329",
+        "name": "SqlConnMgr.js",
+        "type": "JS_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "califoniatesty/SqlConnMgr.js"
+      }
+    },
+    "rootNode": "4c35e35b-7116-43de-9049-c1f88cfdd329",
+    "openFiles": [
+      "71ff3842-a477-4be9-89b3-89974cd285c5"
+    ],
+    "currentFileId": "71ff3842-a477-4be9-89b3-89974cd285c5",
+    "resources": {
+      "http-trigger": {
+        "name": "http-trigger",
+        "type": "http-trigger",
+        "config": {}
+      },
+      "sqlinstance10": {
+        "name": "sqlinstance10",
+        "type": "CloudSQL",
+        "config": {
+          "mode": 1,
+          "instance": {
+            "name": "instance10",
+            "host": "34.73.4.187",
+            "port": 3306,
+            "user": "root",
+            "password": "sachithra@142",
+            "database": "information_schema"
+          }
+        }
+      }
+    },
+    "customTemplate": {
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [
+      {
+        "lambdaId": "71ff3842-a477-4be9-89b3-89974cd285c5",
+        "varKey": "Password_sqlinstance10",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": true
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {
+        "slappforge-sdk-gcp": {
+          "name": "slappforge-sdk-gcp",
+          "language": "javascript",
+          "version": "0.0.1",
+          "dev": false,
+          "notRemovable": false
+        }
+      }
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "califoniatesty",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east1",
+    "platform": "GCP",
+    "platformRegions": {},
+    "lastSave": 1579684182851
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "califoniatesty",
+      "url": "https://github.com/Indunil1992/califoniatesty"
+    }
+  }
+}
